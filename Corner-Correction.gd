@@ -1,3 +1,5 @@
+var Corner_Correction_Pixels : int = 8
+
 func _Apply_Corner_Correction(delta: float) -> void:
 	if velocity.y < 0 and test_move(global_transform, Vector2(0, velocity.y * delta)):
 		for i in range(1, Corner_Correction_Pixels * 2 + 1):
