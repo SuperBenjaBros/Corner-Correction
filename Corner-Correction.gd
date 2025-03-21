@@ -1,4 +1,4 @@
-var Corner_Correction_Pixels : int = 8
+var Corner_Correction_Pixels : int = 10
 
 func _Apply_Corner_Correction(delta: float) -> void:
 	var move_vec = Vector2(0, velocity.y * delta)
